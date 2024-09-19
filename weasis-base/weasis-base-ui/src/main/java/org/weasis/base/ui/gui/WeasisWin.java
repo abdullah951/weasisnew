@@ -337,7 +337,7 @@ public class WeasisWin {
     boolean showDownloadRelease =
         preferences.getBooleanProperty("weasis.show.update.next.release", true);
     if (updateRelease && showDownloadRelease) {
-      CompletableFuture.runAsync(() -> checkReleaseUpdate(frame));
+//      CompletableFuture.runAsync(() -> checkReleaseUpdate(frame));
     }
   }
 
