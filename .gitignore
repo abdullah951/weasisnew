@@ -18,6 +18,7 @@ dist/
 nbdist/
 nbactions.xml
 nb-configuration.xml
+iHealthCure/
 
 # Ignore Maven files
 target/

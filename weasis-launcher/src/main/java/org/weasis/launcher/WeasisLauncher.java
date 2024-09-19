@@ -187,10 +187,7 @@ public class WeasisLauncher {
       // Use the system bundle context to process the auto-deploy
       // and auto-install/auto-start properties.
       loader.setFelix(serverProp, mFelix.getBundleContext(), modulesi18n);
-      loader.writeLabel(
-          String.format(
-              Messages.getString("WeasisLauncher.starting"),
-              System.getProperty(ConfigData.P_WEASIS_NAME)));
+      loader.writeLabel("Starting iHC-PACS");
       mTracker =
           new ServiceTracker(
               mFelix.getBundleContext(), "org.apache.felix.service.command.CommandProcessor", null);

@@ -27,11 +27,10 @@ public class AppProperties {
   private static final Logger LOGGER = LoggerFactory.getLogger(AppProperties.class);
 
   /** The version of the application (for display) */
-  public static final String WEASIS_VERSION =
-      System.getProperty("weasis.version", "0.0.0"); // NON-NLS
+  public static final String WEASIS_VERSION = "1.0.0"; // NON-NLS
 
   /** The name of the application (for display) */
-  public static final String WEASIS_NAME = System.getProperty("weasis.name", "Weasis"); // NON-NLS
+  public static final String WEASIS_NAME = "iHC-PACS"; // NON-NLS
 
   /**
    * The current user of the application (defined either in the launch property "weasis.user" or by

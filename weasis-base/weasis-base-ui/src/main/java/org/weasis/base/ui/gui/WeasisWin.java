@@ -682,13 +682,13 @@ public class WeasisWin {
     if (helpURL != null) {
       final JMenuItem helpContentMenuItem = new JMenuItem(Messages.getString("WeasisWin.guide"));
       helpContentMenuItem.addActionListener(e -> openBrowser(helpContentMenuItem, helpURL));
-      helpMenuItem.add(helpContentMenuItem);
+//      helpMenuItem.add(helpContentMenuItem);
     }
 
     final JMenuItem webMenuItem = new JMenuItem(Messages.getString("WeasisWin.shortcuts"));
     webMenuItem.addActionListener(
         e -> openBrowser(webMenuItem, preferences.getProperty("weasis.help.shortcuts")));
-    helpMenuItem.add(webMenuItem);
+//    helpMenuItem.add(webMenuItem);
 
     final JMenuItem websiteMenuItem =
         new JMenuItem(
@@ -696,8 +696,8 @@ public class WeasisWin {
     GuiUtils.applySelectedIconEffect(websiteMenuItem);
     websiteMenuItem.addActionListener(
         e -> openBrowser(websiteMenuItem, preferences.getProperty("weasis.help.online")));
-    helpMenuItem.add(websiteMenuItem);
-    helpMenuItem.add(new JSeparator());
+//    helpMenuItem.add(websiteMenuItem);
+//    helpMenuItem.add(new JSeparator());
 
     final JMenuItem updateMenuItem = new JMenuItem(Messages.getString("check.for.updates"));
     updateMenuItem.addActionListener(
@@ -719,7 +719,7 @@ public class WeasisWin {
             }
           }
         });
-    helpMenuItem.add(updateMenuItem);
+//    helpMenuItem.add(updateMenuItem);
 
     final JMenuItem openLogFolderMenuItem =
         new JMenuItem(Messages.getString("open.logging.folder"));
@@ -727,13 +727,13 @@ public class WeasisWin {
         e ->
             GuiUtils.openSystemExplorer(
                 openLogFolderMenuItem, new File(AppProperties.WEASIS_PATH, "log")));
-    helpMenuItem.add(openLogFolderMenuItem);
+//    helpMenuItem.add(openLogFolderMenuItem);
 
     final JMenuItem reportMenuItem = new JMenuItem(Messages.getString("submit.bug.report"));
     reportMenuItem.addActionListener(
         e -> openBrowser(reportMenuItem, "https://github.com/nroduit/Weasis/issues"));
-    helpMenuItem.add(reportMenuItem);
-    helpMenuItem.add(new JSeparator());
+//    helpMenuItem.add(reportMenuItem);
+//    helpMenuItem.add(new JSeparator());
     WProperties p = GuiUtils.getUICore().getSystemPreferences();
     if (p.getBooleanProperty("weasis.plugins.license", false)) {
       final JMenuItem licencesMenuItem = new JMenuItem(Messages.getString("LicencesDialog.title"));
@@ -768,8 +768,8 @@ public class WeasisWin {
               ColorLayerUI.showCenterScreen(dialog, layer);
             }
           });
-      helpMenuItem.add(licencesMenuItem);
-      helpMenuItem.add(new JSeparator());
+//      helpMenuItem.add(licencesMenuItem);
+//      helpMenuItem.add(new JSeparator());
     }
 
     final JMenuItem aboutMenuItem =

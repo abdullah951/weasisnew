@@ -92,7 +92,7 @@ public class WeasisLoader {
     cancelButton.addActionListener(evt -> closing());
 
     Icon icon = new FlatSVGIcon(resPath.resolve("svg/logo/WeasisAbout.svg").toUri());
-    String text =
+    String text = "iHC-PACS";
         String.format(
             Messages.getString("WebStartLoader.title"), System.getProperty("weasis.name"));
     JLabel imagePane = new JLabel(text, icon, SwingConstants.CENTER);

@@ -99,7 +99,7 @@ public class ConfigData {
 
   public void init(String[] args) {
     this.clear();
-    LOGGER.info("Starting Weasis...");
+    LOGGER.info("Starting ...");
     LOGGER.info("Initialization of the launch configuration...");
 
     if (args != null) {
